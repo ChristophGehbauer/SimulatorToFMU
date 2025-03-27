@@ -339,7 +339,7 @@ def main():
                 ' The -pv (Python version) set is {!s} which is invalid.'.format(python_vers)
                 log.error(s)
                 raise ValueError(s)
-            if(len_str_py_vers>2):
+            if(len_str_py_vers>3):
                 s='The flag -pv must be a two digits number which is either 27 for Python 2.7,'\
                 ' 34 for Python 3.4, 37 for Python 3.7 or higher (e.g. 38 for Python 3.8). '\
                 ' The -pv (Python version) set is {!s} which is invalid.'.format(python_vers)
@@ -1284,7 +1284,7 @@ class SimulatorToFMU(object):
         if(self.export_tool == 'jmodelica'):
             if(platform.system().lower()=='linux'):
                 if (not (self.export_tool_path is None)):
-                    command = os.path(os.path.join(self.export_tool_path,
+                    command = os.path.join(os.path.join(self.export_tool_path,
                     'jm_python.sh'))
                 else:
                     command = os.path.normpath(os.path.join('jm_python.sh'))
