@@ -533,7 +533,7 @@ def main():
     # to add "model_name".scripts to the python path
     # Currently adding an import statement in the Python
     # main script will cause the module to fail
-    needs_tool = 'true'
+    needs_tool = 'false'
     # Check if fmi api is none
     # if(needs_tool is None):
     #     log.info(

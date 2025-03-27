@@ -13,3 +13,4 @@ rToFMU/Resources/src/python/310``` and ```make -f Makefile.linux all```
 - Modified ```SimulatorToFMU\simulatortofmu\parser\SimulatorToFMU.py```
 	- Replace ```os.path(``` with ```os.path.join(```.
 	- Allow ```len_str_py_vers``` to have 3 characters.
+	- Set ```needs_tool = 'false'```.
